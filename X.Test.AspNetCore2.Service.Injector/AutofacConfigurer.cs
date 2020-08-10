@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using System.Linq;
-using X.Test.AspNetCore2.Service.Impl;
+using X.Test.AspNetCore2.Service.Impl.Base;
 
 namespace X.Test.AspNetCore2.Service.Injector
 {
@@ -29,6 +29,9 @@ namespace X.Test.AspNetCore2.Service.Injector
                 opt.UseLoggerFactory(loggerFactory);
                 return new SchoolContext(opt.Options);
             });
+
+            builder.RegisterType<DbContextFactory<SampleContext>>().As<IDbContextFactory<SampleContext>>().SingleInstance();
+            builder.RegisterType<DbContextFactory<SchoolContext>>().As<IDbContextFactory<SchoolContext>>().SingleInstance();
 
             //var service = Assembly.Load(File.ReadAllBytes(Path.Combine(AppContext.BaseDirectory, "X.Test.AspNetCore2.Service.Impl.dll")));
             //builder.RegisterAssemblyTypes(service).Where(x=>x.Name.EndsWith("Service")).AsImplementedInterfaces();

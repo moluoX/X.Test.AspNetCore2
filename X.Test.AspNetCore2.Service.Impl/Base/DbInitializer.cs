@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using X.Test.AspNetCore2.Model;
 
-namespace X.Test.AspNetCore2.Service.Impl
+namespace X.Test.AspNetCore2.Service.Impl.Base
 {
     public static class DbInitializer
     {
