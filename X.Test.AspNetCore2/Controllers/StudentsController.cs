@@ -9,10 +9,7 @@ namespace X.Test.AspNetCore2.Controllers
     {
         private readonly IStudentService _service;
 
-        public StudentsController(IStudentService service)
-        {
-            _service = service;
-        }
+        public StudentsController(IStudentService service) => _service = service;
 
         // GET: Students
         public async Task<IActionResult> Index()

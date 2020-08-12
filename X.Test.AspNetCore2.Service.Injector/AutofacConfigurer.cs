@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using System;
 using System.Linq;
 using X.Test.AspNetCore2.Service.Impl.Base;
 

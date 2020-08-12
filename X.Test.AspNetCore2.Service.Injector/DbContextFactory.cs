@@ -11,11 +11,7 @@ namespace X.Test.AspNetCore2.Service.Injector
     {
         private ILifetimeScope _scope;
         ConnectionStringBuilder _connectionStringBuilder;
-        public DbContextFactory(ILifetimeScope scope, ConnectionStringBuilder connectionStringBuilder)
-        {
-            _scope = scope;
-            _connectionStringBuilder = connectionStringBuilder;
-        }
+        public DbContextFactory(ILifetimeScope scope, ConnectionStringBuilder connectionStringBuilder) => (_scope, _connectionStringBuilder) = (scope, connectionStringBuilder);
 
         public T GetDbContext(DbContextReadOrWrite readOrWrite)
         {
@@ -23,7 +19,7 @@ namespace X.Test.AspNetCore2.Service.Injector
 
             var opt = new DbContextOptionsBuilder<T>();
             opt.UseSqlServer(connectionString);
-            
+
             var loggerFactory = LoggerFactory.Create(builder => { builder.AddConsole(x => x.LogToStandardErrorThreshold = LogLevel.Trace); });
             opt.UseLoggerFactory(loggerFactory);
 

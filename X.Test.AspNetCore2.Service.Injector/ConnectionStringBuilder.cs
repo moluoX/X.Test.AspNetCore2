@@ -12,10 +12,7 @@ namespace X.Test.AspNetCore2.Service.Injector
     public class ConnectionStringBuilder
     {
         protected IConfiguration _configuration;
-        public ConnectionStringBuilder(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        public ConnectionStringBuilder(IConfiguration configuration) => _configuration = configuration;
 
         public string Get<T>(DbContextReadOrWrite readOrWrite)
         {

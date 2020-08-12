@@ -16,13 +16,7 @@ namespace X.Test.AspNetCore2.Controllers
         private IAService _a;
         private readonly IUserService _service;
 
-        public HomeController(ILogger<HomeController> logger, IConfiguration configuration, IAService a, IUserService service)
-        {
-            _logger = logger;
-            _configuration = configuration;
-            _a = a;
-            _service = service;
-        }
+        public HomeController(ILogger<HomeController> logger, IConfiguration configuration, IAService a, IUserService service) => (_logger, _configuration, _a, _service) = (logger, configuration, a, service);
 
         public async Task<IActionResult> Index()
         {
