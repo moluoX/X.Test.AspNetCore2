@@ -8,7 +8,7 @@ namespace X.Test.AspNetCore2.Service.Impl
 {
     public class StudentService : BaseService<Student>, IStudentService
     {
-        public StudentService(IDbContextFactory<SampleContext> contextFactory) : base(contextFactory)
+        public StudentService(IDbContextFactory<SchoolContext> contextFactory) : base(contextFactory)
         {
         }
 

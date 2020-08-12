@@ -20,6 +20,8 @@ namespace X.Test.AspNetCore2.Controllers
 
         public async Task<IActionResult> Index()
         {
+            _logger.LogInformation("[Index]");
+
             var user = HttpContext.Session.GetString("User");
             if (string.IsNullOrEmpty(user))
             {

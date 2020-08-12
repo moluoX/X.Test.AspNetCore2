@@ -21,7 +21,7 @@ namespace X.Test.AspNetCore2.Service.Injector
             {
                 connectionName = "SampleConnection";
             }
-            else if (typeof(T) == typeof(SampleContext))
+            else if (typeof(T) == typeof(SchoolContext))
             {
                 connectionName = "SchoolConnection";
             }
@@ -30,19 +30,16 @@ namespace X.Test.AspNetCore2.Service.Injector
                 throw new ArgumentOutOfRangeException(nameof(T));
             }
 
-            string connectionString;
             switch (readOrWrite)
             {
                 case DbContextReadOrWrite.Read:
                     var connectionStrings = _configuration.GetSection($"ConnectionStrings:{connectionName}Read").Get<string[]>();
                     return Choose(connectionStrings);
                 case DbContextReadOrWrite.Write:
-                    connectionString = _configuration.GetConnectionString(connectionName);
-                    break;
+                    return _configuration.GetConnectionString(connectionName);
                 default:
                     throw new ArgumentOutOfRangeException(nameof(readOrWrite));
             }
-            return connectionString;
         }
 
         protected string Choose(string[] connectionStrings)
