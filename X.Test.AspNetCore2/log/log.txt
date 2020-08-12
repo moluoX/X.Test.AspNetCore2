@@ -112,3 +112,63 @@ SELECT @@ROWCOUNT;
 2020-08-12 11:02:35,220 [12] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
 SELECT [s].[ID], [s].[EnrollmentDate], [s].[FirstMidName], [s].[LastName]
 FROM [Student] AS [s]
+2020-08-12 22:54:52,339 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+2020-08-12 22:54:52,418 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2020-08-12 22:54:52,491 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-08-12 22:54:52,512 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-08-12 22:54:52,530 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\code\x\X.Test.AspNetCore2\X.Test.AspNetCore2
+2020-08-12 22:54:52,748 [4] INFO  X.Test.AspNetCore2.Controllers.HomeController - [Index]
+2020-08-12 22:57:04,546 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+2020-08-12 22:57:04,637 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2020-08-12 22:57:04,654 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-08-12 22:57:04,672 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-08-12 22:57:04,685 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\code\x\X.Test.AspNetCore2\X.Test.AspNetCore2
+2020-08-12 22:57:05,028 [4] INFO  X.Test.AspNetCore2.Controllers.HomeController - [Index]
+2020-08-12 22:57:06,552 [4] INFO  Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 3.1.7 initialized 'SampleContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: using lazy-loading proxies 
+2020-08-12 22:57:07,483 [4] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (69ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CompanyId], [u].[Name]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__p_0
+2020-08-12 22:57:10,891 [4] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Company] AS [c]
+WHERE [c].[Id] = @__p_0
+2020-08-12 22:57:54,255 [4] INFO  X.Test.AspNetCore2.Controllers.HomeController - [Index]
+2020-08-12 22:57:54,331 [4] INFO  Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 3.1.7 initialized 'SampleContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: using lazy-loading proxies 
+2020-08-12 22:57:54,348 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CompanyId], [u].[Name]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__p_0
+2020-08-12 22:58:01,094 [4] INFO  X.Test.AspNetCore2.Controllers.HomeController - [Index]
+2020-08-12 22:58:01,116 [4] INFO  Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 3.1.7 initialized 'SampleContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: using lazy-loading proxies 
+2020-08-12 22:58:01,133 [7] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CompanyId], [u].[Name]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__p_0
+2020-08-12 22:58:11,455 [7] INFO  X.Test.AspNetCore2.Controllers.HomeController - [Index]
+2020-08-12 22:58:11,479 [7] INFO  Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 3.1.7 initialized 'SampleContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: using lazy-loading proxies 
+2020-08-12 22:58:11,497 [9] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (3ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CompanyId], [u].[Name]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__p_0
+2020-08-12 22:58:25,766 [9] INFO  X.Test.AspNetCore2.Controllers.HomeController - [Index]
+2020-08-12 22:58:25,787 [9] INFO  Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 3.1.7 initialized 'SampleContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: using lazy-loading proxies 
+2020-08-12 22:58:25,812 [4] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CompanyId], [u].[Name]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__p_0
+2020-08-12 22:58:36,828 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: https://localhost:5001
+2020-08-12 22:58:36,851 [1] INFO  Microsoft.Hosting.Lifetime - Now listening on: http://localhost:5000
+2020-08-12 22:58:36,947 [1] INFO  Microsoft.Hosting.Lifetime - Application started. Press Ctrl+C to shut down.
+2020-08-12 22:58:37,016 [1] INFO  Microsoft.Hosting.Lifetime - Hosting environment: Development
+2020-08-12 22:58:37,032 [1] INFO  Microsoft.Hosting.Lifetime - Content root path: D:\code\x\X.Test.AspNetCore2\X.Test.AspNetCore2
+2020-08-12 22:58:37,304 [7] INFO  X.Test.AspNetCore2.Controllers.HomeController - [Index]
+2020-08-12 22:58:38,435 [7] INFO  Microsoft.EntityFrameworkCore.Infrastructure - Entity Framework Core 3.1.7 initialized 'SampleContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: using lazy-loading proxies 
+2020-08-12 22:58:39,133 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (76ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CompanyId], [u].[Name]
+FROM [User] AS [u]
+WHERE [u].[Id] = @__p_0
+2020-08-12 22:58:39,396 [10] INFO  Microsoft.EntityFrameworkCore.Database.Command - Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [c].[Id], [c].[Name]
+FROM [Company] AS [c]
+WHERE [c].[Id] = @__p_0

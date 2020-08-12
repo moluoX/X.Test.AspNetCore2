@@ -12,6 +12,6 @@ namespace X.Test.AspNetCore2.Model
         public string Title { get; set; }
         public int Credits { get; set; }
 
-        public ICollection<Enrollment> Enrollments { get; set; }
+        public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
 }

@@ -18,7 +18,7 @@ namespace X.Test.AspNetCore2.Service.Injector
             var connectionString = _connectionStringBuilder.Get<T>(readOrWrite);
 
             var opt = new DbContextOptionsBuilder<T>();
-            opt.UseSqlServer(connectionString);
+            opt.UseLazyLoadingProxies().UseSqlServer(connectionString);
 
             var loggerFactory = LoggerFactory.Create(builder => { builder.AddLog4Net(); });
             opt.UseLoggerFactory(loggerFactory);

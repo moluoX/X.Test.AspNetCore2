@@ -7,6 +7,6 @@ namespace X.Test.AspNetCore2.Model
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public Company Company { get; set; }
+        public virtual Company Company { get; set; }
     }
 }
