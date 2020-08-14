@@ -14,6 +14,7 @@ namespace X.Test.AspNetCore2.Controllers
         // GET: Students
         public async Task<IActionResult> Index()
         {
+            //return View(await _service.ListByCondition(new Student { FirstMidName = "t", LastName = "n" }));
             return View(await _service.ListAll());
         }
 
